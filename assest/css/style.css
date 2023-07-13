@@ -1,0 +1,384 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Tophead Start */
+.tophead {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.backgroundhead {
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px 1px rgb(204, 201, 201);
+}
+.backgroundhead ul li a {
+    font-size: 13px;
+}
+
+.backgroundhead ul li .btn {
+    height: 35px;
+    border-radius: 20px;
+}
+.signup_btn{
+    background-color: green;
+}
+@media screen and (max-width:991px) {
+    .tophead {
+        display: none;
+    }
+}
+/* Tophead End */
+
+/* Navbar Start */
+.navbar {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+.navbar .dropdown:hover .dropdown-menu{
+    display: block;
+}
+.navbar .btn{
+    border-radius: 25px;
+}
+.book_btn{
+    background-color: green;
+}
+@media screen and (max-width:991px){
+    .navbar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+}
+.nav-item .nav-link {
+    color: white;
+}
+.nav-item .nav-link:hover {
+    color: rgb(216, 211, 211)
+}
+/* Navbar End */
+
+/* Carousel Start */
+.carousel .carousel-caption {
+    top: 40%;
+    left: 11%;
+    text-align: left;
+}
+.clock_animation{
+    position: relative;
+    bottom: 75px;
+    left: 60px;
+    z-index:1;
+    width: 700px;
+    height: 380px; 
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    animation-play-state: running;
+}
+@keyframes up-down{
+    from{
+        bottom:75px;
+    }
+    to{
+        bottom:95px;
+    }
+}
+.whatsapp_logo{
+    position: fixed;
+    top:450px;
+    right: 1150px;
+    animation: whatsapp 0.5s ease-in-out infinite alternate-reverse both;
+    animation-play-state: running;
+    z-index: 1;
+}
+@keyframes whatsapp{
+    from{
+       top:450px;
+    }
+    to{
+      top: 480px;
+    }
+}
+.carousel a {
+    border-radius: 30px;
+}
+.hire_btn{
+    background-color: green;
+}
+@media screen and (max-width:450px){
+    .carousel-caption p{
+     font-size: 12px;
+    }
+    .hire_btn{
+     padding: 2px 8px;
+     font-size: 5px;
+    }
+    .carousel-indicators{
+     display: none;
+    }
+    .clock_animation{
+        display: none;
+    }
+}
+/* Carousel End */
+
+/* Marquee Start */
+marquee {
+    box-shadow: 0px 0px 3px 2px rgb(235, 231, 231);
+    color: rgb(88, 74, 74);
+    font-size: 14px;
+}
+/* Marquee End */
+
+/* About Us Section Start */
+.about img {
+    box-shadow: 0px 0px 5px 2px rgb(238, 233, 233);
+    border-radius: 10px;
+}
+.about p {
+    font-size: 14px;
+
+}
+.aboutleft {  
+    padding: 27px;
+    border-radius: 15px;
+    background-color: rgb(198, 240, 198);
+    box-shadow: 0px 3px 1px;
+    transition:all 0.3s ease-in-out;
+}
+.aboutleft:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 1px green;
+}
+.aboutright {
+    padding: 27px;
+    border-radius: 15px;
+    background-color: rgb(198, 240, 198);
+    box-shadow: 0px 3px 1px;
+    transition:all 0.3s ease-in-out;
+}
+.aboutright:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 1px green;
+}
+/* About Us Section End */
+
+/* Why US Section Start */
+.whyus {
+    font-size: 14px;
+    background-color: rgb(245, 244, 244);
+}
+
+.whyleft,
+.whycenter,
+.whyright {
+    box-shadow: 0px 0px 3px 2px rgb(224, 221, 221);
+    background-color: white;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(192, 214, 192);
+    transition:all 0.3s ease-in-out;
+}
+
+.whyleft:hover,
+.whycenter:hover,
+.whyright:hover {
+    transform: translateY(-5px);
+    border-bottom: 3px solid green;
+}
+.whycenter {
+    padding: 38px;
+}
+/* Why US Section End */
+
+/* Who Is Section Start */
+.whoisright {
+    background-color: rgb(198, 240, 198);
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 1px green;
+    transition:all 0.3s ease-in-out;
+}
+
+.whoisright:hover {
+    box-shadow: 0px 3px 1px rgb(16, 156, 16);
+    transform: translateY(-5px);
+}
+
+.whoisleft img {
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.whoisleft img:hover{
+    box-shadow: 0px 3px 1px rgb(16, 156, 16);
+    transform: translateY(-5px);
+}
+/* Who Is Section End */
+
+/* Offer Section Start */
+.offer{
+   background-color: rgb(245, 244, 244);
+   font-size: 13px;
+   letter-spacing: 0.5px;
+}
+.offer1, .offer2, .offer3, .offer4, .offer5, .offer6{
+    box-shadow: 0px 3px 3px 0px rgb(224, 221, 221);
+    background-color: white;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(192, 214, 192);
+    transition: all 0.3s ease-in-out;
+}
+.offer1:hover, .offer2:hover, .offer3:hover, .offer4:hover, .offer5:hover, .offer6:hover{
+    border-bottom: 3px solid green;
+    transform: translateY(-5px);
+}
+.offer5{
+    padding-bottom: 20px;
+}
+/* Offer Section End */
+/* Work Section Start */
+.work{
+    font-size: 14px;
+}
+.work1, .work2, .work3, .work4{
+    padding: 27px;
+    border-radius: 15px;
+    background-color: rgb(198, 240, 198);
+    box-shadow: 0px 3px 1px green;
+    transition: all 0.3s ease-in-out;
+}
+.work1:hover, .work2:hover, .work3:hover, .work4:hover{
+    box-shadow: 0px 3px 1px rgb(16, 156, 16);
+    transform: translateY(-5px);
+}
+.work4{
+    padding-bottom: 6px;
+}
+/* Work Section Start */
+/* Client Section Start */
+.client{
+  background-color: rgb(245, 244, 244);
+}
+.clientslider{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+.clientslider .slide:hover{
+    box-shadow: 0px 3px 0px 0px green; 
+}
+.clientslider:hover{
+    transform: translateY(-5px);
+}
+/* Client Section End */
+/* Need Help Section Start */
+.contact-info{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding-bottom: 25px;
+    box-shadow: 0px 3px 0px 0px green, 0px -3px 0px 0px green;
+}
+.icon a{
+   margin-right: 20px;
+   padding: 13px 12px;
+   background-color: #fff;
+   border: 1px solid rgb(219, 217, 217);
+   border-radius: 50%;
+   color: green;
+}
+.icon a:hover{
+    background-color: green;
+    color: #fff;
+    transition: all 0.6s;
+}
+.lo{
+    font-size: 20px;
+    color:green;
+}
+.lo:hover{
+    color:white;
+}
+.form{
+    box-shadow: 0px 3px 0px 0px green, 0px -3px 0px 0px green;
+}
+.form_btn{
+    margin-bottom: 17px;
+    background-color: green;
+}
+/* Need Help Section End */
+/* Capital Risk Section Start */
+.capital{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    background-color: rgb(245, 244, 244);
+}
+.paragraph_box {
+    padding: 0px 60px;
+    background-color: rgb(198, 240, 198);
+    box-shadow: 0px 3px 1px rgb(105, 104, 104);
+    transition: all 0.3s ease-in-out;
+}
+.paragraph_box:hover{
+    box-shadow: 0px 3px 0px 0px green;
+    transform: translateY(-5px);
+}
+/* Capital Risk Section End */
+/* Footer Section Start */
+.footer{
+    background-color: rgb(13, 4, 22);
+}
+.footer1 p{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: rgb(201, 200, 200);
+}
+.footer2 ul li{
+    padding-top: 10px;
+    font-size:13px;
+    letter-spacing: 0.5px;
+}
+.footer2 ul li a{
+    color: rgb(201, 200, 200);
+}
+.footer2 ul li a:hover, .footer2 ul li:hover{
+    color:green;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.f_i_1, .f_i_2, .f_i_3, .f_i_4, .f_i_5{
+    background-color: green;
+    border: 1px solid green;
+}
+.f_i_1:hover, .f_i_2:hover, .f_i_3:hover, .f_i_4:hover, .f_i_5:hover{
+    background-color: grey;
+    border: 1px solid gray;
+    transition: all 0.3s;
+}
+/* Footer Setion End */
+/* FooterEnd Section Start */
+.footer_end{
+    font-size: 12px;
+}
+.footer_end strong a{
+    text-decoration: none;
+   color: green;
+}
+/* FooterEnd Section End */
+
+/* ===================== About Us Section Start ================================== */
+/* Banner Section Start */
+.banner_home{
+    position:absolute;
+    top:200px;
+}
+/* Banner Section Start */
